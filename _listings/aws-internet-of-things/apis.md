@@ -32,7 +32,7 @@ apis:
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-cancelcertificatetransfer-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-rejectcertificatetransfer-get.md
 x-common:
 - type: x-blog
   url: https://aws.amazon.com/iot-platform/developer-resources/#Blog
