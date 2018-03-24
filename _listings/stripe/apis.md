@@ -33,7 +33,7 @@ apis:
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-post.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
