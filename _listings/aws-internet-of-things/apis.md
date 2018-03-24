@@ -18,8 +18,8 @@ tags:
 - Internet of Things
 - Devices
 - Amazon Web Services
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -32,7 +32,7 @@ apis:
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-rejectcertificatetransfer-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-acceptcertificatetransfer-get.md
 x-common:
 - type: x-blog
   url: https://aws.amazon.com/iot-platform/developer-resources/#Blog
