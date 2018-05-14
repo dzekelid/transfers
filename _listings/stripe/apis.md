@@ -34,15 +34,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-reversals-id-post.md
-- name: Stripe Add Transfers  Reversals
-  description: Post Transfers, , Reversals
+- name: Stripe Get Transfers Transfer
+  description: Retrieves the details of an existing transfer. Supply the unique transfer
+    ID from either a transfer creation request or the transfer list, and Stripe will
+    return the corresponding transfer information.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-id-reversals-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-get-postman.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
