@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Internet of Things API
+  title: AWS Internet of Things API Cancel Certificate Transfer
   version: 1.0.0
+  description: Cancels a pending transfer for the specified certificate.
 schemes:
 - http
 produces:
