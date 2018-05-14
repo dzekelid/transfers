@@ -34,15 +34,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-reversals-id-post.md
-- name: Stripe Add Transfers Transfer
-  description: Post Transfers, Transfer
+- name: Stripe Get Transfers Transfer Reversals
+  description: By default, you can see the 10 most recent reversals stored directly
+    on the transfer object, but you can also retrieve details about a specific reversal
+    stored on the transfer.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-reversals-id-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-reversals-id-get-postman.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
