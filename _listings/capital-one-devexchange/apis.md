@@ -23,17 +23,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/transfers-transferid-delete.md
-- name: Capital One DevExchange Get all transfers
-  description: Returns the transfers that you are involved in.
+- name: Capital One DevExchange Create a transfer
+  description: Creates a transfer where the account with the ID specified is the payer.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
   humanURL: http://capitalone.com
   baseURL: https://api.reimaginebanking.com//
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/accounts-id-transfers-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/accounts-id-transfers-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/accounts-id-transfers-post.md
 x-common:
 - type: x-authentication
   url: https://developer.capitalone.com/platform-documentation/authorization-with-oauth-20/
