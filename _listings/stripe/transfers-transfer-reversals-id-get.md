@@ -1,9 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Get Transfers Transfer Reversals
+  description: By default, you can see the 10 most recent reversals stored directly
+    on the transfer object, but you can also retrieve details about a specific reversal
+    stored on the transfer.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
