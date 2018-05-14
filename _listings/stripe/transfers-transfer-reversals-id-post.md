@@ -1,9 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Add Transfers Transfer Reversals
+  description: Updates the specified reversal by setting the values of the parameters
+    passed. Any parameters not provided will be left unchanged.This request only accepts
+    metadata and description as arguments.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
