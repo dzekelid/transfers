@@ -34,19 +34,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-transfer-reversals-id-post.md
-- name: Stripe Get Transfers
-  description: Returns a list of existing transfers sent to connected accounts. The
-    transfers are returned in sorted order, with the most recently created transfers
-    appearing first.
+- name: Stripe Add Transfers
+  description: Post Transfers
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/stripe/transfers-post.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
