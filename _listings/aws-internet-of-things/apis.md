@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-rejectcertificatetransfer-get.md
-- name: AWS Internet of Things API Cancel Certificate Transfer
-  description: Cancels a pending transfer for the specified certificate.
+- name: AWS Internet of Things API Reject Certificate Transfer
+  description: Rejects a pending certificate transfer.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
   humanURL: https://aws.amazon.com/iot-platform/
   baseURL: http:://{host}//
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-cancelcertificatetransfer-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/aws-internet-of-things/action-rejectcertificatetransfer-get.md
 x-common:
 - type: x-blog
   url: https://aws.amazon.com/iot-platform/developer-resources/#Blog
