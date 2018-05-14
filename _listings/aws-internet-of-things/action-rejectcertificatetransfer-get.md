@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Internet of Things API
+  title: AWS Internet of Things API Reject Certificate Transfer
   version: 1.0.0
+  description: Rejects a pending certificate transfer.
 schemes:
 - http
 produces:
