@@ -1,9 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Get Transfers Transfer
+  description: Retrieves the details of an existing transfer. Supply the unique transfer
+    ID from either a transfer creation request or the transfer list, and Stripe will
+    return the corresponding transfer information.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
