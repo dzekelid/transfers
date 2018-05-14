@@ -23,15 +23,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/transfers-transferid-delete.md
-- name: Capital One DevExchange Update a specific existing transfer
-  description: Updates the specific transfer
+- name: Capital One DevExchange Delete a specific existing transfer
+  description: Deletes the specific transfer
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
   humanURL: http://capitalone.com
   baseURL: https://api.reimaginebanking.com//
   tags: Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/transfers-transferid-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/transfers-transferid-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transfers/master/_listings/capital-one-devexchange/transfers-transferid-delete-postman.md
 x-common:
 - type: x-authentication
   url: https://developer.capitalone.com/platform-documentation/authorization-with-oauth-20/
