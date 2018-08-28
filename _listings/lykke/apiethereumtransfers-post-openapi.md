@@ -49,6 +49,101 @@ paths:
       tags:
       - Ethereum
       - Transfers
+  /api/Ethereum/{operationId}/transfer:
+    post:
+      summary: Add API Ethereum Operation Transfer
+      description: Add api ethereum operation transfer.
+      operationId: ApiEthereumByOperationIdTransferPost
+      x-api-path-slug: apiethereumoperationidtransfer-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: operationId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Ethereum
+      - Operation
+      - Transfer
+  /api/TrustedWallets/{operationId}/transfer:
+    post:
+      summary: Add API Trustedwallets Operation Transfer
+      description: Add api trustedwallets operation transfer.
+      operationId: Transfer
+      x-api-path-slug: apitrustedwalletsoperationidtransfer-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: path
+        name: operationId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Trustedwallets
+      - Operation
+      - Transfer
+  /api/TransferInfo:
+    get:
+      summary: Get API Transferinfo
+      description: Get api transferinfo.
+      operationId: ApiTransferInfoGet
+      x-api-path-slug: apitransferinfo-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: query
+        name: transferId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transferinfo
+  /api/BankTransferRequest:
+    post:
+      summary: Add API Banktransferrequest
+      description: Add api banktransferrequest.
+      operationId: ApiBankTransferRequestPost
+      x-api-path-slug: apibanktransferrequest-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: transferReq
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Banktransferrequest
+  /api/BcnTransactionByTransfer/{id}:
+    get:
+      summary: Get API Bcntransactionbytransfer
+      description: Get api bcntransactionbytransfer.
+      operationId: ApiBcnTransactionByTransferByIdGet
+      x-api-path-slug: apibcntransactionbytransferid-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: path
+        name: id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Bcntransactionbytransfer
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

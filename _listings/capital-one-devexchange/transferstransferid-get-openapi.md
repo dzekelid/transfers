@@ -77,6 +77,43 @@ paths:
       - Banks
       - Transfers
       - Transfer
+    put:
+      summary: Update a specific existing transfer
+      description: Updates the specific transfer
+      operationId: updates-the-specific-transfer
+      x-api-path-slug: transferstransferid-put
+      parameters:
+      - in: body
+        name: body
+        description: Transfer to be updated
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: transferId
+        description: ID of the transfer that is being updated
+      responses:
+        200:
+          description: OK
+      tags:
+      - Banks
+      - Transfers
+      - Transfer
+    delete:
+      summary: Delete a specific existing transfer
+      description: Deletes the specific transfer
+      operationId: deletes-the-specific-transfer
+      x-api-path-slug: transferstransferid-delete
+      parameters:
+      - in: path
+        name: transferId
+        description: ID of the transfer that is being deleted
+      responses:
+        200:
+          description: OK
+      tags:
+      - Banks
+      - Transfers
+      - Transfer
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Lykke
 x-complete: 1
@@ -48,4 +47,180 @@ paths:
       tags:
       - Ethereum
       - Transfers
----
+  /api/Ethereum/{operationId}/transfer:
+    post:
+      summary: Add API Ethereum Operation Transfer
+      description: Add api ethereum operation transfer.
+      operationId: ApiEthereumByOperationIdTransferPost
+      x-api-path-slug: apiethereumoperationidtransfer-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: operationId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Ethereum
+      - Operation
+      - Transfer
+  /api/TrustedWallets/{operationId}/transfer:
+    post:
+      summary: Add API Trustedwallets Operation Transfer
+      description: Add api trustedwallets operation transfer.
+      operationId: Transfer
+      x-api-path-slug: apitrustedwalletsoperationidtransfer-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: path
+        name: operationId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Trustedwallets
+      - Operation
+      - Transfer
+  /api/TransferInfo:
+    get:
+      summary: Get API Transferinfo
+      description: Get api transferinfo.
+      operationId: ApiTransferInfoGet
+      x-api-path-slug: apitransferinfo-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: query
+        name: transferId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Transferinfo
+  /api/BankTransferRequest:
+    post:
+      summary: Add API Banktransferrequest
+      description: Add api banktransferrequest.
+      operationId: ApiBankTransferRequestPost
+      x-api-path-slug: apibanktransferrequest-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: transferReq
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Banktransferrequest
+  /api/BcnTransactionByTransfer/{id}:
+    get:
+      summary: Get API Bcntransactionbytransfer
+      description: Get api bcntransactionbytransfer.
+      operationId: ApiBcnTransactionByTransferByIdGet
+      x-api-path-slug: apibcntransactionbytransferid-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: path
+        name: id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Bcntransactionbytransfer
+  /api/GenerateTransferTransaction:
+    post:
+      summary: Add API Generatetransfertransaction
+      description: Add api generatetransfertransaction.
+      operationId: ApiGenerateTransferTransactionPost
+      x-api-path-slug: apigeneratetransfertransaction-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Generatetransfertransaction
+  /api/offchain/requestTransfer:
+    post:
+      summary: Add API Offchain Requesttransfer
+      description: Add api offchain requesttransfer.
+      operationId: ApiOffchainRequestTransferPost
+      x-api-path-slug: apioffchainrequesttransfer-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Offchain
+      - Requesttransfer
+  /api/offchain/transferToMargin:
+    post:
+      summary: Add API Offchain Transfertomargin
+      description: Add api offchain transfertomargin.
+      operationId: ApiOffchainTransferToMarginPost
+      x-api-path-slug: apioffchaintransfertomargin-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Offchain
+      - Transfertomargin
+  /api/offchain/{operationId}/transferToTrusted:
+    post:
+      summary: Add API Offchain Operation Transfertotrusted
+      description: Add api offchain operation transfertotrusted.
+      operationId: ApiOffchainByOperationIdTransferToTrustedPost
+      x-api-path-slug: apioffchainoperationidtransfertotrusted-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: operationId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Offchain
+      - Operation
+      - Transfertotrusted
